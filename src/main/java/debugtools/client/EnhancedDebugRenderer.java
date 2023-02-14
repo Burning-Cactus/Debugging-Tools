@@ -33,15 +33,15 @@ public class EnhancedDebugRenderer extends DebugRenderer {
         this.renderers.put("neighborsUpdateRenderer", this.neighborsUpdateRenderer);
         this.renderers.put("structureRenderer", this.structureRenderer);
         this.renderers.put("lightDebugRenderer", this.lightDebugRenderer);
-        this.renderers.put("worldGenAttemptRenderer", this.worldGenAttemptRenderer);
+        this.renderers.put("worldGenAttemptRenderer", this.worldGenAttemptRenderer); // TODO: Where is the packet for this?
         this.renderers.put("solidFaceRenderer", this.solidFaceRenderer);
         this.renderers.put("chunkRenderer", this.chunkRenderer);
-        this.renderers.put("brainDebugRenderer", this.brainDebugRenderer);
+        this.renderers.put("brainDebugRenderer", this.brainDebugRenderer); // TODO: Brain stuff
         this.renderers.put("villageSectionsDebugRenderer", this.villageSectionsDebugRenderer);
-        this.renderers.put("beeDebugRenderer", this.beeDebugRenderer);
-        this.renderers.put("raidDebugRenderer", this.raidDebugRenderer);
-        this.renderers.put("goalSelectorRenderer", this.goalSelectorRenderer);
-        this.renderers.put("gameEventListenerRenderer", this.gameEventListenerRenderer);
+        this.renderers.put("beeDebugRenderer", this.beeDebugRenderer); // TODO
+        this.renderers.put("raidDebugRenderer", this.raidDebugRenderer); // TODO
+        this.renderers.put("goalSelectorRenderer", this.goalSelectorRenderer); // TODO
+        this.renderers.put("gameEventListenerRenderer", this.gameEventListenerRenderer); // TODO
     }
 
     @Override

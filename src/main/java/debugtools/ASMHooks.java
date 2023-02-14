@@ -14,6 +14,7 @@ import net.minecraft.world.level.pathfinder.Target;
 
 import java.util.HashSet;
 
+@SuppressWarnings("unused")
 public class ASMHooks {
     public static void pathFindingPacket(Level level, Mob mob, Path path, float maxDistanceToWaypoint) {
         if (path != null && level instanceof ServerLevel serverLevel) {
@@ -32,5 +33,13 @@ public class ASMHooks {
                 ((ServerPlayer)player).connection.send(packet);
             }
         }
+    }
+
+    public static void neighborsUpdatePacket() {
+
+    }
+
+    public static void structurePacket() {
+
     }
 }
