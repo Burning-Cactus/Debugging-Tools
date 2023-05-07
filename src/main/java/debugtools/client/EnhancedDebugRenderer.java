@@ -14,9 +14,10 @@ import java.util.Map;
 
 @OnlyIn(Dist.CLIENT)
 public class EnhancedDebugRenderer extends DebugRenderer {
-
     private final Map<String, SimpleDebugRenderer> renderers;
     private final List<SimpleDebugRenderer> activeRenderers;
+
+    public final MobSpawnAttemptRenderer mobSpawnAttemptRenderer = new MobSpawnAttemptRenderer();
 
     public EnhancedDebugRenderer(Minecraft minecraft) {
         super(minecraft);
@@ -42,6 +43,9 @@ public class EnhancedDebugRenderer extends DebugRenderer {
         this.renderers.put("raidDebugRenderer", this.raidDebugRenderer); // TODO
         this.renderers.put("goalSelectorRenderer", this.goalSelectorRenderer); // TODO
         this.renderers.put("gameEventListenerRenderer", this.gameEventListenerRenderer); // TODO
+
+        //Custom renderers
+        this.renderers.put("mobSpawnAttemptRenderer", this.mobSpawnAttemptRenderer);
     }
 
     @Override

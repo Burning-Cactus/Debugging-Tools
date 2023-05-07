@@ -1,3 +1,4 @@
 {
-  "pathfindingpacket": "asm/pathfindingpacket.js"
+  "pathfindingpacket": "asm/pathfindingpacket.js",
+  "spawnattempts": "asm/spawnattempts.js"
 }
